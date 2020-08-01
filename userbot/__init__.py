@@ -75,6 +75,10 @@ ALIVE_LOGO = os.environ.get(
 # IMG Stuff
 IMG_LIMIT = os.environ.get("IMG_LIMIT", None)
 
+# Wolfram ID
+# Get an API KEY from products.wolframalpha.com/api/
+WOLFRAM_ID = os.environ.get("WOLFRAM_ID", None)
+
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
