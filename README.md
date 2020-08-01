@@ -16,4 +16,11 @@ Deploy to Heroku:
 
 ## Credits
 
-Huge thanks to [everyone](https://github.com/GengKapak/DCLXVI/) who have helped make this userbot awesome!!</p>
+Thanks for all : 
+* [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
+* [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
+* [kandnub](https://github.com/kandnub) - TG-UserBot
+* [AdekMaulana](https://github.com/adekmaulana) - ProjectBish
+* [Mr.Miss](https://github.com/keselekpermen69) - Userbutt
+* [Mkaraniya](https://github.com/mkaraniya) - OpenUserBot
+* [DevPatel](https://github.com/Devp73) - UserBot1
