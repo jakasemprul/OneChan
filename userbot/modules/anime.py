@@ -168,8 +168,8 @@ def get_poster(query):
 
 def post_to_telegraph(anime_title, html_format_content):
     post_client = TelegraphPoster(use_api=True)
-    auth_name = "@GengKapak"
-    bish = "https://t.me/GengKapak"
+    auth_name = "@ilham_Maulana12"
+    bish = "https://t.me/ilham_Maulana1"
     post_client.create_api_token(auth_name)
     post_page = post_client.post(
         title=anime_title,
@@ -646,7 +646,7 @@ async def anime(message):
         )
 
 
-@register(outgoing=True, pattern=r"^\.whatanime")
+@register(outgoing=True, pattern=r"^\.whatnime")
 async def whatanime(e):
     media = e.media
     if not media:
@@ -666,9 +666,9 @@ async def whatanime(e):
             if isinstance(i, DocumentAttributeFilename):
                 filename = i.file_name
                 break
-    await e.edit("`Downloading image..`")
+    await e.edit("`Mencari Judul Anime...`")
     content = await e.client.download_media(media, bytes, thumb=-1 if ig else None)
-    await e.edit("`Searching for result..`")
+    await e.edit("`Mencari Hasil..`")
     file = memory_file(filename, content)
     async with aiohttp.ClientSession() as session:
         url = "https://trace.moe/api/search"
@@ -749,7 +749,7 @@ CMD_HELP.update(
         "\nUsage: Search anime.\n\n"
         ">`.smanga` <manga>"
         "\nUsage: Search manga.\n\n"
-        ">`.whatanime` Reply to media: foto, gif or video."
+        ">`.whatnime` Reply to media: foto, gif or video."
         "\nUsage: Find anime from replied media."
     }
 )
