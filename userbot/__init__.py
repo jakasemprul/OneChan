@@ -61,8 +61,16 @@ STRING_SESSION = os.environ.get("STRING_SESSION", None)
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
 
 # Userbot logging feature switch.
-BOTLOG = sb(os.environ.get("BOTLOG", "False"))
+BOTLOG = sb(os.environ.get("BOTLOG", "True"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
+
+# Default .alive name
+ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+
+# Default .alive logo
+ALIVE_LOGO = os.environ.get(
+    "ALIVE_LOGO",
+    "https://telegra.ph/file/110fb8fc0b3ef6dec4b05.jpg")
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -71,10 +79,14 @@ PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
+# Github Credentials for updater and Gitupload.
+GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
+GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
+
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Ilham94/OneChan.git")
+    "https://github.com/Ilham94/OneChan")
 # UPSTREAM_REPO_URL branch, the default is master
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "master")
@@ -90,9 +102,6 @@ OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 
 # Telegraph
 TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", None)
-
-# Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # remove.bg API key
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
@@ -147,6 +156,10 @@ G_DRIVE_AUTH_TOKEN_DATA = os.environ.get("G_DRIVE_AUTH_TOKEN_DATA", None)
 G_DRIVE_FOLDER_ID = os.environ.get("G_DRIVE_FOLDER_ID", None)
 TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
                                          "./downloads")
+                                         
+# Zipfile module
+ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY",
+                                         "./zips")                                         
 
 # Terminal Alias
 TERM_ALIAS = os.environ.get("TERM_ALIAS", None)
@@ -156,6 +169,9 @@ GENIUS = os.environ.get("GENIUS_ACCESS_TOKEN", None)
 
 # Quote
 QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
+
+# Deezloader
+DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
 
 # Setting Up CloudMail.ru and MEGA.nz extractor binaries,
 # and giving them correct perms to work properly.
@@ -216,6 +232,20 @@ with bot:
             "valid entity. Check your environment variables/config.env file.")
         quit(1)
 
+async def check_alive():
+    await bot.send_message(BOTLOG_CHATID, f"`Selamat bro, bot anda saat ini telah aktif. terimakasih telah menggunakan layanan Daeng Server Bot Telegram ðŸ˜`")
+    return
+
+with bot:
+    try:
+        bot.loop.run_until_complete(check_alive())
+    except:
+        LOGS.info(
+            "BOTLOG_CHATID environment variable isn't a "
+            "valid entity. Check your environment variables/config.env file.")
+        quit(1)
+
+
 # Global Variables
 COUNT_MSG = 0
 USERS = {}
@@ -224,3 +254,4 @@ LASTMSG = {}
 CMD_HELP = {}
 ISAFK = False
 AFKREASON = None
+ZALG_LIST = {}
