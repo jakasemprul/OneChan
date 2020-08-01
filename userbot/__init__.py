@@ -223,28 +223,6 @@ async def check_botlog_chatid():
         quit(1)
 
 
-with bot:
-    try:
-        bot.loop.run_until_complete(check_botlog_chatid())
-    except:
-        LOGS.info(
-            "BOTLOG_CHATID environment variable isn't a "
-            "valid entity. Check your environment variables/config.env file.")
-        quit(1)
-
-async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, f"`Selamat bro, bot anda saat ini telah aktif. terimakasih telah menggunakan layanan Daeng Server Bot Telegram ðŸ˜`")
-    return
-
-with bot:
-    try:
-        bot.loop.run_until_complete(check_alive())
-    except:
-        LOGS.info(
-            "BOTLOG_CHATID environment variable isn't a "
-            "valid entity. Check your environment variables/config.env file.")
-        quit(1)
-
 
 # Global Variables
 COUNT_MSG = 0
