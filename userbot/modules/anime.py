@@ -8,7 +8,7 @@ from urllib.parse import quote as urlencode
 
 import aiohttp
 import bs4
-import jikanpy
+import ZALG_LIST
 import pendulum
 import requests
 from html_telegraph_poster import TelegraphPoster
@@ -25,7 +25,7 @@ from telethon.utils import is_image, is_video
 from userbot import CMD_HELP
 from userbot.events import register
 
-jikan = Jikan()
+jikan = ZALG_LIST()
 
 # Anime Helper
 
