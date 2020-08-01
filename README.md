@@ -1,3 +1,5 @@
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Ilham94/OneChan"> <img src="https://i.ibb.co/6XgGwxT/photo-2020-02-01-11-27-40.jpg" alt="Deploy to Heroku" /></a></p>
+
 ## Generate String Session
 
 Run on Repl.it:
