@@ -24,4 +24,4 @@ Thanks for all :
 * [Mr.Miss](https://github.com/keselekpermen69) - Userbutt
 * [Mkaraniya](https://github.com/mkaraniya) - OpenUserBot
 * [DevPatel](https://github.com/Devp73) - UserBot1
-* [GengKapak](https://github.com/GengKapak/DCLXVI/graphs/contributors)
+* [GengKapak](https://github.com/GengKapak/DCLXVI/graphs/contributors) -DCLXVI
