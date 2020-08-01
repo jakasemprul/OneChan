@@ -129,8 +129,7 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('`Sukses Di Update!\n'
-                     'Bot sementara di Restart... Silahkan tunggu beberapa detik!`')
+    await event.edit('`OneChan UserBot was successfully updated`')
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
