@@ -233,7 +233,7 @@ with bot:
         quit(1)
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, f"`Selamat bro, bot anda saat ini telah aktif. terimakasih telah menggunakan layanan Daeng Server Bot Telegram 😍`")
+    await bot.send_message(BOTLOG_CHATID, f"` `")
     return
 
 with bot:
