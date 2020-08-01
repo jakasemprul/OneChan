@@ -20,6 +20,7 @@ hachoir
 heroku3
 httplib2
 humanize
+Jikanpy
 lxml
 oauth2client
 Pillow
