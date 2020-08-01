@@ -647,7 +647,7 @@ async def anime(message):
 
 
 @register(outgoing=True, pattern=r"^\.whatnime")
-async def whatanime(e):
+async def whatnime(e):
     media = e.media
     if not media:
         r = await e.get_reply_message()
