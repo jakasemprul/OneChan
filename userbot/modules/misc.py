@@ -80,7 +80,6 @@ async def reedme(e):
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
 
-# Copyright (c) Daeng Server Bot | 2020
 @register(outgoing=True, pattern="^\.repeat (.*)")
 async def repeat(rep):
     cnt, txt = rep.pattern_match.group(1).split(' ', 1)
@@ -98,8 +97,7 @@ async def repeat(rep):
 @register(outgoing=True, pattern="^\.repo$")
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
-    await wannasee.edit(
-        "=========================\n Thanks To [Adek Maulana](https://github.com/adekmaulana/ProjectBish) To ProjectBish Official Repo\n =========================\n [Klik Disini](https://github.com/daenghunter/ProjectBish-1/tree/master) `Untuk Memakai Repo Daeng Server !`\n"
+    await wannasee.edit("[Repo](https://github.com/Ilham94/OneChan) GitHub's page.")
     )
 
 
