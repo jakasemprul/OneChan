@@ -82,6 +82,9 @@ WOLFRAM_ID = os.environ.get("WOLFRAM_ID", None)
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
+# bit.ly module
+BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
+
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
