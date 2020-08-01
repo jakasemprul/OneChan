@@ -72,6 +72,9 @@ ALIVE_LOGO = os.environ.get(
     "ALIVE_LOGO",
     "https://telegra.ph/file/110fb8fc0b3ef6dec4b05.jpg")
 
+# IMG Stuff
+IMG_LIMIT = os.environ.get("IMG_LIMIT", None)
+
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
