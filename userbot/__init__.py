@@ -233,7 +233,7 @@ with bot:
         quit(1)
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, f"` `")
+    await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
     return
 
 with bot:
