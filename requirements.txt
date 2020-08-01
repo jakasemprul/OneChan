@@ -23,6 +23,7 @@ humanize
 Jikanpy
 lxml
 oauth2client
+pendulum
 Pillow
 psycopg2
 psycopg2-binary
