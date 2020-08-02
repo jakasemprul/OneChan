@@ -16,11 +16,7 @@ Run on Repl.it:
 ## Credits
 
 Thanks for all : 
-* [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
-* [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
 * [kandnub](https://github.com/kandnub) - TG-UserBot
 * [AdekMaulana](https://github.com/adekmaulana) - ProjectBish
-* [Mr.Miss](https://github.com/keselekpermen69) - Userbutt
-* [Mkaraniya](https://github.com/mkaraniya) - OpenUserBot
-* [DevPatel](https://github.com/Devp73) - UserBot1
 * [GengKapak](https://github.com/GengKapak/DCLXVI/graphs/contributors) -DCLXVI
+* [aone-id](https://github.com/aone-id/aone-kangbot) -aone-kangbot
