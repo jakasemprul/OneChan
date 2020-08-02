@@ -7,5 +7,4 @@ from userbot.events import register
 
 @register(outgoing=True, pattern='^.oi(?: |$)(.*)')
 async def typewriter(wannasee):
-	await wannasee.edit("`Click [here](https://github.com/Ilham94/OneChan)`")
-	
+	await wannasee.edit("[Repo](https://github.com/GengKapak/DCLXVI) GitHub's page.")
