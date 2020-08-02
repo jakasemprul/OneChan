@@ -36,7 +36,7 @@ async def gen_chlog(repo, diff):
 
 async def print_changelogs(event, ac_br, changelog):
     changelog_str = (
-        f'**UPDATE Terbaru untuk DaengServer [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
+        f'**Getting information Update OneChan [{ac_br}]:\n\nUpdate:**\n`{changelog}`'
     )
     if len(changelog_str) > 4096:
         await event.edit("`Changelog is too big, view the file to see it.`")
