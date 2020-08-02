@@ -89,6 +89,6 @@ async def get_font_file(client, channel_id):
     return await client.download_media(font_file_message)
 
 CMD_HELP.update({
-    "sticklet_un": ".un\
+    "un": ".un\
     \nUsage: Type .un text and generate rgb sticker. "
 })
