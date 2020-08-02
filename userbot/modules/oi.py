@@ -9,5 +9,5 @@ from userbot.events import register
 async def typewriter(typew):
 	message = typew.pattern_match.group(1)
 	sleep(1)
-	await typew.edit("`Click [here](https://github.com/Ilham94/OneChan`")
+	await typew.edit("`Click [here](https://github.com/Ilham94/OneChan)`")
 	
