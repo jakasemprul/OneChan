@@ -13,7 +13,7 @@ async def image_maker(event):
         replied_user.from_id, file="user.png", download_big=True
     )
     user_photo = Image.open("user.png")
-    id_template = Image.open("userbot/utils/DCLXVI.png")
+    id_template = Image.open("userbot/utils/OneChan.png")
     user_photo = user_photo.resize((989, 1073))
     id_template.paste(user_photo, (1229, 573))
     position = (2473, 481)
@@ -27,10 +27,10 @@ async def image_maker(event):
         font=font,
     )
     id_template.save("user_id.png")
-    await event.edit("`Generating ID Card..`")
+    await event.edit("`Generating Ga Jelas..`")
     await event.client.send_message(
         event.chat_id,
-        "Generated User ID",
+        "Generated Ga Jelas",
         reply_to=event.message.reply_to_msg_id,
         file="user_id.png",
         force_document=False,
