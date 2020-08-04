@@ -20,6 +20,39 @@ from telethon.sessions import StringSession
 
 load_dotenv("config.env")
 
+StartTime = time.time()
+
+
+def paginate_help(page_number, loaded_modules, prefix):
+    number_of_rows = 5
+    number_of_cols = 2
+    helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
+    helpable_modules = sorted(helpable_modules)
+    modules = [
+        custom.Button.inline("{} {}".format("🔸", x), data="ub_modul_{}".format(x))
+        for x in helpable_modules
+    ]
+    pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
+    if len(modules) % number_of_cols == 1:
+        pairs.append((modules[-1],))
+    max_num_pages = ceil(len(pairs) / number_of_rows)
+    modulo_page = page_number % max_num_pages
+    if len(pairs) > number_of_rows:
+        pairs = pairs[
+            modulo_page * number_of_rows: number_of_rows * (modulo_page + 1)
+        ] + [
+            (
+                custom.Button.inline(
+                    "⬅️", data="{}_prev({})".format(prefix, modulo_page)
+                ),
+                custom.Button.inline(
+                    "➡️", data="{}_next({})".format(prefix, modulo_page)
+                ),
+            )
+        ]
+    return pairs
+
+
 # Bot Logs setup:
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
