@@ -72,6 +72,10 @@ ALIVE_LOGO = os.environ.get(
     "ALIVE_LOGO",
     "https://telegra.ph/file/68f9100c81cc918215fc2.jpg")
 
+# Inline bot
+BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
+
 # IMG Stuff
 IMG_LIMIT = os.environ.get("IMG_LIMIT", None)
 
