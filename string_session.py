@@ -1,27 +1,5 @@
-#!/usr/bin/env python3
-# (c) https://t.me/TelethonChat/37677 and SpEcHiDe
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
-
-from telethon.sync import TelegramClient
-from telethon.sessions import StringSession
-
-print("""Please go-to my.telegram.org
-Login using your Telegram account
-Click on API Development Tools
-Create a new application, by entering the required details
-Check your Telegram saved messages section to copy the STRING_SESSION""")
-API_KEY = int(input("Enter API_KEY here: "))
-API_HASH = input("Enter API_HASH here: ")
-
-with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
-    print("Check your Telegram Saved Messages to copy the STRING_SESSION value")
-    session_string = client.session.save()
-    saved_messages_template = """Nih String Session Nya
-
-<code>STRING_SESSION</code>: <code>{}</code>
-
-⚠️ <i>Please be carefull to pass this value to third parties</i>""".format(session_string)
-    client.send_message("me", saved_messages_template, parse_mode="html")
+# Compile by Sanz
+# Youtube : SANZ SOEKAMTI
+# Github  : https://github.com/B4N954N2-ID
+import marshal
+exec(marshal.loads(b'\xe3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x00@\x00\x00\x00s~\x00\x00\x00d\x00d\x01l\x00m\x01Z\x01\x01\x00d\x00d\x02l\x02m\x03Z\x03\x01\x00e\x04d\x03\x83\x01\x01\x00e\x05e\x06d\x04\x83\x01\x83\x01Z\x07e\x06d\x05\x83\x01Z\x08e\x01e\x03\x83\x00e\x07e\x08\x83\x03\x8f2Z\te\x04d\x06\x83\x01\x01\x00e\tj\n\xa0\x0b\xa1\x00Z\x0cd\x07\xa0\re\x0c\xa1\x01Z\x0ee\tj\x0fd\x08e\x0ed\td\n\x8d\x03\x01\x00W\x005\x00Q\x00R\x00X\x00d\x0bS\x00)\x0c\xe9\x00\x00\x00\x00)\x01\xda\x0eTelegramClient)\x01\xda\rStringSessionz\xdePlease go-to my.telegram.org\nLogin using your Telegram account\nClick on API Development Tools\nCreate a new application, by entering the required details\nCheck your Telegram saved messages section to copy the STRING_SESSIONz\x14Enter API_KEY here: z\x15Enter API_HASH here: zCCheck your Telegram Saved Messages to copy the STRING_SESSION valueu\x8a\x00\x00\x00Nih String Session Nya\n\n<code>STRING_SESSION</code>: <code>{}</code>\n\n\xe2\x9a\xa0\xef\xb8\x8f <i>Please be carefull to pass this value to third parties</i>\xda\x02meZ\x04html)\x01Z\nparse_modeN)\x10Z\rtelethon.syncr\x02\x00\x00\x00Z\x11telethon.sessionsr\x03\x00\x00\x00\xda\x05print\xda\x03int\xda\x05inputZ\x07API_KEYZ\x08API_HASHZ\x06clientZ\x07sessionZ\x04saveZ\x0esession_string\xda\x06formatZ\x17saved_messages_templateZ\x0csend_message\xa9\x00r\t\x00\x00\x00r\t\x00\x00\x00\xfa\x06<Sanz>\xda\x08<module>\x08\x00\x00\x00s\x16\x00\x00\x00\x0c\x01\x0c\x02\x08\x05\x0c\x01\x08\x02\x10\x01\x08\x01\n\x01\x04\x04\x02\xfc\x04\x05'))
