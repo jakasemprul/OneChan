@@ -131,13 +131,14 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     logo = ALIVE_LOGO
-    output = (f"`Hi Master, Bot Telah Aktif \n"
-             f"•••••••••••••••••••••••••••••••••\n"
-             f"🐍`Python    :` v{python_version()}\n"
-             f"⚙️`Telethon  :` v{version.__version__}\n"
-             f"👤`User      :` {DEFAULTUSER}\n"
-             f"👁️`Creator   :  [i̞̟̫̺ͭ̒ͭͣlͬ̍ͤ͆ ͕͖͉̭̰ͨh͚̖̜̍̃͐a̘̫͈̭͌͛͌̇̇̍m̘͈̺̪͓ͩ͂̾ͪ̀̋ Ma̘̫͈̭͌͛͌̇̇̍u̟͎̲͕̼ͮͫͭ̋ͭ͛ͣ̈lͬ̍ͤa̘̫͈̭͌͛͌̇̇̍n̋̋̔ͧa͌͛](https://t.me/ilham_Maulana1)\n"
-             f"•••••••••••••••••••••••••••••••••••••••••••••••••••\n")
+    output = (f"`Hi MasTer Bot Telah Actif`\n"
+             f"`Telethon version`: {version.__version__} \n"
+             f"`Python version🐍`: {python_version()} \n"
+             f"`Bot Version🤘: OneChan {BOT_VER}` \n"
+             f"==================================== \n"
+             f"User 👨‍🚀: {DEFAULTUSER} \n"
+             f"Creator:  [i̞̟̫̺ͭ̒ͭͣlͬ̍ͤ͆ ͕͖͉̭̰ͨh͚̖̜̍̃͐a̘̫͈̭͌͛͌̇̇̍m̘͈̺̪͓ͩ͂̾ͪ̀̋ Ma̘̫͈̭͌͛͌̇̇̍u̟͎̲͕̼ͮͫͭ̋ͭ͛ͣ̈lͬ̍ͤa̘̫͈̭͌͛͌̇̇̍n̋̋̔ͧa͌͛](https://t.me/ilham_Maulana1)\n"
+             f"====================================\n")
     await bot.send_file(alive.chat_id, logo, caption=output)
     await alive.delete()
 
