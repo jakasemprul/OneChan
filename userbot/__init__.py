@@ -20,8 +20,6 @@ from telethon.sessions import StringSession
 
 load_dotenv("config.env")
 
-StartTime = time.time()
-
 
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 5
