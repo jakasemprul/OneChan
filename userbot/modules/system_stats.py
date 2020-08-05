@@ -134,7 +134,7 @@ async def amireallyalive(alive):
     output = (f"`Hi MasTer Bot Telah Actif`\n"
              f"`Telethon version`: {version.__version__} \n"
              f"`Python version🐍`: {python_version()} \n"
-             f"`Bot Version🤘: OneChan {BOT_VER}` \n"
+             f"`🕒 Bot Uptime    : {uptime}` \n"
              f"==================================== \n"
              f"User 👨‍🚀: {DEFAULTUSER} \n"
              f"Creator:  [i̞̟̫̺ͭ̒ͭͣlͬ̍ͤ͆ ͕͖͉̭̰ͨh͚̖̜̍̃͐a̘̫͈̭͌͛͌̇̇̍m̘͈̺̪͓ͩ͂̾ͪ̀̋ Ma̘̫͈̭͌͛͌̇̇̍u̟͎̲͕̼ͮͫͭ̋ͭ͛ͣ̈lͬ̍ͤa̘̫͈̭͌͛͌̇̇̍n̋̋̔ͧa͌͛](https://t.me/ilham_Maulana1)\n"
