@@ -56,6 +56,8 @@ def paginate_help(page_number, loaded_modules, prefix):
 # Bot Logs setup:
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
+ASYNC_POOL = []
+
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
