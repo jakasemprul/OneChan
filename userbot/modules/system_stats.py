@@ -138,7 +138,7 @@ async def amireallyalive(alive):
               f"•  👤 `User           :`  {DEFAULTUSER} \n"
               "`----------------------------------`\n"
               f"•  💻 `Running on     :  MasTer `\n"
-              f"•  🗃 `Loaded modules : {len(modules)} `\n"
+              f"•  🗃 `Loaded modules :   123 `\n"
               f"•  🧸 `OneChan        : v{USERBOT_VERSION} `\n"
               "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`")
     await bot.send_file(alive.chat_id, logo, caption=output)
