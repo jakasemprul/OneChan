@@ -133,13 +133,12 @@ async def amireallyalive(alive):
     logo = ALIVE_LOGO
     output =  ("`Hi MasTer Bot Telah Aktif...`\n"
               "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`\n"
+              f"•  👤 `User           :`  {DEFAULTUSER} \n"
               f"•  ⚙️ `Telethon       : v{version.__version__} `\n"
               f"•  🐍 `Python         : v{python_version()} `\n"
-              f"•  👤 `User           :`  {DEFAULTUSER} \n"
               "`----------------------------------`\n"
-              f"•  💻 `Creator        :[i̞̟̫̺ͭ̒ͭͣlͬ̍ͤ͆ ͕͖͉̭̰ͨh͚̖̜̍̃͐a̘̫͈̭͌͛͌̇̇̍m̘͈̺̪͓ͩ͂̾ͪ̀̋ Ma̘̫͈̭͌͛͌̇̇̍u̟͎̲͕̼ͮͫͭ̋ͭ͛ͣ̈lͬ̍ͤa̘̫͈̭͌͛͌̇̇̍n̋̋̔ͧa͌͛](https://t.me/ilham_Maulana1)`\n"
-              f"•  🗃 `Loaded modules :   123 `\n"
-              f"•  🧸 `OneChan        :  1.15.0`\n"
+              f"•  💻 `Running on     :  Master `\n"
+              f"•  🗃 `Loaded modules :   122 `\n"
               "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`")
     await bot.send_file(alive.chat_id, logo, caption=output)
     await alive.delete()
