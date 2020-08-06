@@ -131,13 +131,13 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     logo = ALIVE_LOGO
-    output = ("`Hi MasTer Bot Telah Aktif...`\n"
+    output =  ("`Hi MasTer Bot Telah Aktif...`\n"
               "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`\n"
               f"•  ⚙️ `Telethon       : v{version.__version__} `\n"
               f"•  🐍 `Python         : v{python_version()} `\n"
               f"•  👤 `User           :`  {DEFAULTUSER} \n"
               "`----------------------------------`\n"
-              f"•  💻 `Running on     : {repo.active_branch.name} `\n"
+              f"•  💻 `Running on     :  MasTer `\n"
               f"•  🗃 `Loaded modules : {len(modules)} `\n"
               f"•  🧸 `OneChan        : v{USERBOT_VERSION} `\n"
               "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`")
