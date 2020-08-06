@@ -139,7 +139,7 @@ async def amireallyalive(alive):
               "`----------------------------------`\n"
               f"•  💻 `Running on     :  MasTer `\n"
               f"•  🗃 `Loaded modules :   123 `\n"
-              f"•  🧸 `OneChan        : v{USERBOT_VERSION} `\n"
+              f"•  🧸 `OneChan        :  1.15.0`\n"
               "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`")
     await bot.send_file(alive.chat_id, logo, caption=output)
     await alive.delete()
