@@ -105,7 +105,7 @@ async def save_welcome(event):
     elif event.reply_to_msg_id and not string:
         rep_msg = await event.get_reply_message()
         string = rep_msg.text
-    success = "`Selamat ! anda berhasil mengatur pesan selamat datang di grup ini 🖤`\n"
+    success = "`Welcome bean saved in group`\n"
     if add_welcome_setting(event.chat_id, 0, string, msg_id) is True:
         await event.edit(success.format('saved'))
     else:
@@ -140,9 +140,9 @@ async def del_welcome(event):
     except AttributeError:
         return await event.edit("`Running on Non-SQL mode!`")
     if rm_welcome_setting(event.chat_id) is True:
-        await event.edit("`Pesan selamat datang saat ini sudah di nonaktifkan.`")
+        await event.edit("`welcome Bean Deleted in Group.`")
     else:
-        await event.edit("`Mohon maaf, anda belum mengatur pesan selamat datang di grup ini.`")
+        await event.edit("`Bodo Amat Gue Ga Tau`")
 
 
 CMD_HELP.update({
