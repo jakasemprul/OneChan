@@ -25,7 +25,7 @@ KANGING_STR = [
     "ehh, mantep nih.....aku ambil ya kaga",
     "Bagus eaaaa....\nAmbil ahh....",
     "Ini Sticker aku ambil yaa\nDUARR!",
-    "leh ugha ni Sticker\nCurry ahh~",
+    "Stiker kayak gini pun,gua save😐",
     "Pim Pim Pom!!!\nni Sticker punya aing sekarang hehe",
     "Bentar boss, ane curry dulu",
     "Ihh, bagus nih\nCurry ahh~",
