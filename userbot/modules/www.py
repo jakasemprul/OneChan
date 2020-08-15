@@ -62,9 +62,9 @@ async def neardc(event):
                      f"This Datacenter : `{result.this_dc}`")
 
 
-@register(outgoing=True, pattern="^\.ping$")
+@register(outgoing=True, pattern="^\!ping$")
 async def pingme(pong):
-    """ For .ping command, ping the userbot from any chat.  """
+    """ For !ping command, ping the userbot from any chat.  """
     start = datetime.now()
     await pong.edit("`Pong!`")
     end = datetime.now()
