@@ -127,7 +127,7 @@ async def pipcheck(pip):
             await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern=r"^\!(?:alive|on)\s?(!)?")
+@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(!)?")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     logo = ALIVE_LOGO
@@ -136,7 +136,7 @@ async def amireallyalive(alive):
               f"•  👤 `User           :`  {DEFAULTUSER} \n"
               f"•  ⚙️ `Telethon       : v{version.__version__} `\n"
               f"•  🐍 `Python         : v{python_version()} `\n"
-              "`----------------------------------`\n"
+              "`----------------------------------------------------------------------`\n"
               f"•  💻 `Running on     :  Master `\n"
               f"•  🗃 `Loaded modules :   122 `\n"
               "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶⊶⊶⊶⊶⊶`")
