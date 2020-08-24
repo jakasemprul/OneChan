@@ -131,15 +131,14 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     logo = ALIVE_LOGO
-    output =  ("`Hi MasTer Bot Telah Aktif...`\n"
-              "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶`\n"
-              f"•  👤 `User           :`  {DEFAULTUSER} \n"
-              f"•  ⚙️ `Telethon       : v{version.__version__} `\n"
-              f"•  🐍 `Python         : v{python_version()} `\n"
-              "`-------------------------------------------------`\n"
-              f"•  💻 `Running on     :  Master `\n"
-              f"•  🗃 `Loaded modules :   122 `\n"
-              "`⊷⊷⊷⊷⊷⊷⊷⊷⊷⊷⊶⊷⊶⊶⊶⊶⊶`")
+    output =  (" Hi MaSter Bot Telah Aktif.....\n"
+f"**╭▬▬▬▬❴✪❵SYSTEM❴✪❵▬▬▬▬╮**\n"
+f"┣[ 👤 `Name : {DEFAULTUSER} `\n"
+f"┣[ 🐍 `Python : {python_version()} `\n"
+f"┣[ ⚙️ `Telethon : {version.__version__} `\n"
+f"┣[ 💻 `Running :  Master `\n"
+f"┣[ 🗃 `Modules : {len(modules)} `\n"
+"╰▬▬▬▬▬▬▬❴✪❵▬▬▬▬▬▬▬╯")
     await bot.send_file(alive.chat_id, logo, caption=output)
     await alive.delete()
 
