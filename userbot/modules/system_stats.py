@@ -136,8 +136,8 @@ f"**╭▬▬▬▬❴✪❵SYSTEM❴✪❵▬▬▬▬╮**\n"
 f"┣[ 👤 `Name : {DEFAULTUSER} `\n"
 f"┣[ 🐍 `Python : {python_version()} `\n"
 f"┣[ ⚙️ `Telethon : {version.__version__} `\n"
-f"┣[ 💻 `Running :  Master `\n"
-f"┣[ 🗃 `Modules : {len(modules)} `\n"
+f"┣[ 💻 `Running : Master `\n"
+f"┣[ 🗃 `Modules :  99 `\n"
 "╰▬▬▬▬▬▬▬❴✪❵▬▬▬▬▬▬▬╯")
     await bot.send_file(alive.chat_id, logo, caption=output)
     await alive.delete()
