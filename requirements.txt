@@ -61,7 +61,7 @@ selenium
 speedtest-cli
 sqlalchemy
 telegraph
-telethon==1.16.2
+telethon
 telethon-session-sqlalchemy
 twitter_scraper
 urbandict
